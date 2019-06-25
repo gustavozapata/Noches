@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">Nochesitas</string>
+    <string name="viewport">Book unique places to stay and things to do.</string>
+    <string name="viewport_description">Cali Colombia</string>
+
+    <!--FORM-->
+    <string name="where">WHERE</string>
+    <string name="anywhere">Anywhere</string>
+    <string name="checkin">CHECK-IN</string>
+    <string name="checkout">CHECKOUT</string>
+    <string name="date">mm/dd/yyyy</string>
+    <string name="adults">ADULTS</string>
+    <string name="adult1">1 adult</string>
+    <string name="children">CHILDREN</string>
+    <string name="child0">0 children</string>
+    <string name="search">Search</string>
 </resources>

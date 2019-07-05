@@ -14,4 +14,10 @@
     <string name="children">CHILDREN</string>
     <string name="child0">0 children</string>
     <string name="search">Search</string>
+    <string name="nav_items">Nav Icon</string>
+
+    <!--NAVIGATION BOTTOM-->
+    <string name="nav_explore">Explore</string>
+    <string name="nav_saved">Saved</string>
+    <string name="nav_login">Log in</string>
 </resources>

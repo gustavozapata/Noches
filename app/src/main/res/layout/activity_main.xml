@@ -7,25 +7,20 @@
         android:layout_height="wrap_content">
     <ScrollView
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="match_parent"
+            android:scrollbars="none">
 
         <android.support.constraint.ConstraintLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@android:color/white"
+                android:paddingBottom="86dp"
                 tools:context=".MainActivity">
 
-            <View android:layout_width="350dp" android:layout_height="353dp"
-                  android:background="@color/amarillo"
-                  app:layout_constraintStart_toStartOf="parent"
-                  android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
-                  android:layout_marginEnd="8dp"
-                  app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
-            </View>
             <ImageView
                     android:layout_width="412dp"
                     android:layout_height="236dp"
-                    app:srcCompat="@drawable/image"
+                    android:src="@drawable/image"
                     android:id="@+id/imageView"
                     android:contentDescription="@string/viewport_description"
                     app:layout_constraintTop_toTopOf="parent"
@@ -36,7 +31,7 @@
                     android:text="@string/viewport"
                     android:layout_width="340dp"
                     android:layout_height="79dp"
-                    android:textColor="@android:color/black"
+                    android:textColor="@android:color/white"
                     android:textSize="29sp"
                     android:fontFamily="@font/montserrat_bold"
                     android:id="@+id/textView" app:layout_constraintStart_toStartOf="parent"
@@ -47,9 +42,10 @@
             />
             <android.support.constraint.ConstraintLayout
                     android:layout_width="411dp"
-                    android:layout_height="495dp" app:layout_constraintTop_toBottomOf="@+id/imageView"
+                    android:focusableInTouchMode="true"
+                    android:layout_height="445dp" app:layout_constraintTop_toBottomOf="@+id/imageView"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintEnd_toEndOf="parent" android:id="@+id/constraintLayout">
+                    app:layout_constraintEnd_toEndOf="parent" android:id="@+id/viewport">
 
                 <TextView
                         android:layout_width="wrap_content"
@@ -57,7 +53,7 @@
                         android:text="@string/where"
                         style="@style/labels"
                         app:layout_constraintStart_toStartOf="parent"
-                        android:layout_marginStart="40dp" android:layout_marginTop="24dp"
+                        android:layout_marginStart="40dp" android:layout_marginTop="20dp"
                         app:layout_constraintTop_toTopOf="parent" android:id="@+id/textView2"/>
                 <EditText
                         android:layout_width="330dp"
@@ -75,7 +71,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/labels"
-                        android:id="@+id/textView3" android:layout_marginTop="28dp"
+                        android:id="@+id/textView3" android:layout_marginTop="22dp"
                         app:layout_constraintTop_toBottomOf="@+id/editText"
                         app:layout_constraintStart_toStartOf="parent"
                         android:layout_marginStart="40dp"/>
@@ -93,7 +89,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/labels"
-                        android:id="@+id/textView4" android:layout_marginTop="28dp"
+                        android:id="@+id/textView4" android:layout_marginTop="22dp"
                         app:layout_constraintTop_toBottomOf="@+id/editText" app:layout_constraintEnd_toEndOf="parent"
                         android:layout_marginEnd="108dp"/>
                 <EditText
@@ -110,7 +106,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/labels"
-                        android:id="@+id/textView5" android:layout_marginTop="28dp"
+                        android:id="@+id/textView5" android:layout_marginTop="22dp"
                         app:layout_constraintTop_toBottomOf="@+id/editText2"
                         app:layout_constraintStart_toStartOf="parent"
                         android:layout_marginStart="40dp"/>
@@ -127,7 +123,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         style="@style/labels"
-                        android:id="@+id/textView6" android:layout_marginTop="28dp"
+                        android:id="@+id/textView6" android:layout_marginTop="22dp"
                         app:layout_constraintTop_toBottomOf="@+id/editText3"
                         app:layout_constraintStart_toEndOf="@+id/textView5"
                         android:layout_marginStart="108dp"/>
@@ -146,8 +142,139 @@
                         style="@style/search_button"
                         android:id="@+id/button" app:layout_constraintStart_toStartOf="parent"
                         android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
-                        android:layout_marginEnd="8dp" android:layout_marginTop="24dp"
-                        app:layout_constraintTop_toBottomOf="@+id/editText5"/>
+                        android:layout_marginEnd="8dp" android:layout_marginTop="22dp"
+                        app:layout_constraintTop_toBottomOf="@+id/editText5"
+                        app:layout_constraintHorizontal_bias="0.477"
+                />
+
+            </android.support.constraint.ConstraintLayout>
+
+            <!--LINE BREAK-->
+            <View android:layout_width="match_parent" android:layout_height="1dp"
+                  android:background="@color/grisclaro"
+                  app:layout_constraintStart_toStartOf="parent"
+                  app:layout_constraintEnd_toEndOf="parent"
+                  app:layout_constraintTop_toBottomOf="@+id/viewport" android:id="@+id/linebreak01">
+            </View>
+
+            <!--SECTION 01-->
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="412dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+                    app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+                    android:layout_marginTop="3dp" app:layout_constraintTop_toBottomOf="@+id/linebreak01"
+                    android:id="@+id/section01">
+
+                <!--EXPLORE NOCHESITAS-->
+                <TextView
+                        android:text="@string/explore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        style="@style/subtitles"
+                        android:id="@+id/explore_title"
+                        app:layout_constraintLeft_toLeftOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        android:layout_marginTop="24dp" android:layout_marginStart="40dp"/>
+
+                <HorizontalScrollView android:layout_width="408dp"
+                                      android:layout_height="248dp"
+                                      app:layout_constraintStart_toStartOf="parent"
+                                      app:layout_constraintEnd_toEndOf="parent" android:layout_marginTop="16dp"
+                                      app:layout_constraintTop_toBottomOf="@+id/explore_title"
+                                      android:scrollbars="none" android:layout_marginStart="24dp">
+
+                    <android.support.constraint.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:layout_constraintTop_toBottomOf="@+id/section01"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            tools:layout_editor_absoluteY="849dp">
+
+                        <android.support.constraint.ConstraintLayout android:layout_width="200dp"
+                                                                     android:layout_height="180dp"
+                                                                     android:background="@drawable/shapes"
+                                                                     app:layout_constraintTop_toTopOf="parent"
+                                                                     android:layout_marginStart="8dp"
+                                                                     app:layout_constraintStart_toStartOf="parent"
+                                                                     android:id="@+id/view3"
+                                                                     app:layout_constraintEnd_toStartOf="@+id/view4"
+                                                                     android:layout_marginEnd="8dp"
+                                                                     android:layout_marginTop="24dp"
+                                                                     app:layout_constraintHorizontal_bias="1.0">
+
+                            <android.support.constraint.ConstraintLayout android:background="@drawable/home01"
+                                                                         android:layout_width="match_parent"
+                                                                         android:id="@+id/home1"
+                                                                         android:layout_height="120dp"
+                                                                         app:layout_constraintTop_toTopOf="parent"
+                                                                         app:layout_constraintStart_toStartOf="parent"
+                            />
+                            <android.support.constraint.ConstraintLayout
+                                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                                    app:layout_constraintTop_toBottomOf="@+id/home1"
+                            >
+                                <TextView android:layout_width="100dp" android:layout_height="50dp"
+                                          android:text="@string/homes"
+                                          app:layout_constraintStart_toStartOf="parent"
+                                          app:layout_constraintStart_toEndOf="parent"
+                                          app:layout_constraintTop_toTopOf="parent"
+                                          style="@style/homes" android:layout_marginStart="16dp"
+                                          android:layout_marginTop="16dp"/>
+                            </android.support.constraint.ConstraintLayout>
+
+                        </android.support.constraint.ConstraintLayout>
+
+                        <View android:layout_width="213dp" android:layout_height="91dp"
+                              android:background="@color/amarillo"
+                              app:layout_constraintTop_toTopOf="parent"
+                              android:id="@+id/view4"
+                              app:layout_constraintStart_toEndOf="@+id/view3"
+                              tools:layout_editor_absoluteX="153dp" android:layout_marginTop="24dp"/>
+                        <View android:layout_width="213dp" android:layout_height="91dp"
+                              android:background="@color/design_default_color_primary_dark"
+                              app:layout_constraintTop_toTopOf="parent"
+                              android:id="@+id/view5" app:layout_constraintStart_toEndOf="@+id/view4"
+                              android:layout_marginStart="88dp" android:layout_marginTop="24dp"/>
+                        <View android:layout_width="213dp" android:layout_height="91dp"
+                              android:background="@color/colorPrimary"
+                              app:layout_constraintTop_toTopOf="parent"
+                              android:layout_marginTop="24dp"
+                              android:id="@+id/view6" app:layout_constraintStart_toEndOf="@+id/view4"
+                              android:layout_marginStart="8dp"/>
+
+                    </android.support.constraint.ConstraintLayout>
+
+                </HorizontalScrollView>
+
+                <!--SECTION 01 -->
+            </android.support.constraint.ConstraintLayout>
+
+
+            <!--SECTION 02-->
+            <android.support.constraint.ConstraintLayout
+                    android:layout_width="412dp"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/section02"
+                    app:layout_constraintTop_toBottomOf="@+id/section01"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+            >
+                <android.support.constraint.ConstraintLayout android:layout_width="305dp"
+                                                             android:layout_height="502dp"
+                                                             android:background="@drawable/hosted"
+                                                             app:layout_constraintTop_toTopOf="parent"
+                                                             app:layout_constraintStart_toStartOf="parent"
+                                                             android:layout_marginStart="40dp"
+                                                             android:layout_marginTop="32dp"
+                                                             app:layout_constraintEnd_toEndOf="parent"
+                                                             android:layout_marginEnd="40dp">
+                    <ImageView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent" android:src="@drawable/clouds"
+                            android:id="@+id/imageView5" tools:layout_editor_absoluteY="120dp"
+                            android:contentDescription="@string/anywhere"/>
+                </android.support.constraint.ConstraintLayout>
 
             </android.support.constraint.ConstraintLayout>
 
@@ -161,7 +288,7 @@
             app:layout_constraintStart_toStartOf="parent" app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             android:visibility="invisible"
-            android:id="@+id/constraintLayout2">
+            android:id="@+id/navigation_layout">
         <include layout="@layout/navigation_bottom"
                  tools:layout_editor_absoluteX="1dp"/>
     </android.support.constraint.ConstraintLayout>

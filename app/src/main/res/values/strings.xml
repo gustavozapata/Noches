@@ -24,4 +24,36 @@
     <!--SECTION01-->
     <string name="explore">Explore Nochesitas</string>
     <string name="homes">Homes</string>
+    <string name="experiences">Experiences</string>
+    <string name="adventures">Adventures</string>
+    <string name="events">Events</string>
+
+    <!--SECTION02-->
+    <string name="clouds01">INTRODUCING NOCHES ADVENTURES</string>
+    <string name="clouds02">Hosted journeys to extraordinary places</string>
+    <string name="learnmore">Learn more &gt;</string>
+
+    <!--SECTION03-->
+    <string name="recommended">Recommended for you</string>
+    <string name="san">San Francisco</string>
+    <string name="col">Colombia</string>
+    <string name="paris">Paris</string>
+    <string name="tokyo">Tokyo</string>
+    <string name="price">£90/night average</string>
+
+    <!--SECTION04-->
+    <string name="intro">Introducing Airbnb Plus</string>
+    <string name="intro_text">A selection of homes verified for quality and design</string>
+    <string name="explore_homes">EXPLORE HOMES  &gt;</string>
+
+    <!--SECTION05-->
+    <string name="world">Homes around the world</string>
+    <string name="flat">ENTIRE FLAT - LONDON</string>
+    <string name="desc1">Light &amp; Spacious Garden Flat London</string>
+    <string name="desc2">City Penthouse in Central London;</string>
+    <string name="desc3">In the historical center of London</string>
+    <string name="desc4">Airstream &quot;Glamping&quot; in London</string>
+    <string name="superhot">• Superhot</string>
+    <string name="number">192</string>
+    <string name="showall">Show all (2000+)</string>
 </resources>

@@ -25,6 +25,17 @@
         <item name="android:textColor">#707070</item>
     </style>
 
+    <style name="cloudsmall">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:fontFamily">@font/montserrat_semibold</item>
+    </style>
+
+    <style name="homes_container">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">150dp</item>
+    </style>
+
     <style name="homes">
         <item name="android:textSize">16sp</item>
         <item name="android:fontFamily">@font/montserrat_bold</item>
